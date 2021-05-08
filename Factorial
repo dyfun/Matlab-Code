@@ -1,0 +1,15 @@
+a = -10;
+value=1;
+
+if a==0
+    disp(sonuc);
+elseif(a < 0)
+    disp('Error!');
+else
+    for i=1:a
+        value = value*i;
+    end
+    disp(sonuc);
+end
+
+%You can use factorial() function instead of this.
