@@ -1,0 +1,10 @@
+a = 3; 
+numbers = 0;
+
+for i=1:a
+    b = input('Enter the value: ');
+    numbers = numbers + b;
+end
+
+numbers = numbers/a;
+disp(numbers)
