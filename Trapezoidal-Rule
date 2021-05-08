@@ -1,0 +1,15 @@
+a=5;
+b=25;
+N=500;
+h = (b-a)/N;
+f1=@(x) exp(-3*x)*cos(2*x);
+
+s = 0.5 *(f1(a)+f1(b));
+
+for i=1:N-1
+    s = s + f1(a + i*h);
+end
+
+resultone=h*s;
+
+fprintf('Integral of the first function is %.10f\n', resultone);
