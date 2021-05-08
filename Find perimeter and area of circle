@@ -1,0 +1,3 @@
+r = input('Enter the radius of circle: ');
+perimeter = 2*pi*r
+area = pi*r^2
