@@ -1,0 +1,17 @@
+a = input('Enter the n value: ');
+firstTerm=0;
+secondTerm=1;
+
+if(a == 1)
+    firsTerm=0;
+elseif(a ==2)
+	secondTerm=1;
+else
+    term=1;
+    for i=3:a;
+       firstTerm = secondTerm;
+       secondTerm=term;
+       term = firstTerm + secondTerm;
+    end
+end
+disp(term);
