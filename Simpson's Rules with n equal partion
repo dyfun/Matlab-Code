@@ -21,3 +21,18 @@ end
 
 resultone = h/3*(sumof_1+4*fnc_1(a+(N-1)*h));
 resulttwo = h/3*(sumof_2+4*fnc_2(a+(N-1)*h));
+
+// Also you can write as follows
+
+for i=1:2:N-1
+    sumof_1= sumof_1 + 4*fnc_1(a+i*h);
+    sumof_2= sumof_2 + 4*fnc_2(a+i*h);
+end
+
+for i=2:2:N-2
+    sumof_1= sumof_1 + 2*fnc_1(a+i*h);
+    sumof_2= sumof_2 + 2*fnc_2(a+i*h);
+end
+
+resultone = h/3*sumof_1;
+resulttwo = h/3*sumof_2;
